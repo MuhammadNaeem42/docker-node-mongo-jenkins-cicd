@@ -5,7 +5,7 @@ pipeline {
         stage("Clone Code"){
             steps {
                 echo "Cloning the code"
-                git url:"https://github.com/MuhammadNaeem42/docker-node-mongo-jenkins-cicd.git", master: "main"
+                git url:"https://github.com/MuhammadNaeem42/docker-node-mongo-jenkins-cicd.git",  branch: "master"
             }
         }
         stage("Build"){
